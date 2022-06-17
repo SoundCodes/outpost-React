@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Audio Peak Meters</title>
+  <style type="text/css">
+    body {
+      background-color: #eee;
+      font-size: 18px;
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 300;
+      margin: 2em auto;
+      max-width: 40em;
+      line-height: 1.5;
+      color: #444;
+      padding: 0 0.5em;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.2;
+    }
+
+    a {
+      color: #607d8b;
+    }
+
+    .highlighter-rouge {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: .2em;
+      font-size: .8em;
+      overflow-x: auto;
+      padding: .2em .4em;
+    }
+
+    pre {
+      margin: 0;
+      padding: .6em;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="web-audio-peak-meters">Web Audio Peak Meters</h1>
+
+  <p>Customizable peak meters, using the web audio API.</p>
+
+  <h2 id="demo">Demo</h2>
+
+  <div>
+    <div id="demo1-peak-meter" style="width: 3em; height: 20em; margin: 0em 0;">
+    </div>
+    <audio id="demo1-audio" preload="metadata" controls="controls">
+      <source src="audio/marines_hymn.mp3" type="audio/mpeg" />
+    </audio>
+  </div>
+
+  <script src="web-audio-peak-meter-2.1.0.js"></script>
+  <script>
+    function initDemo(meterId, audioId, options, ctx) {
+      var meterElement = document.getElementById(meterId);
+      var audioElement = document.getElementById(audioId);
+      var sourceNode = ctx.createMediaElementSource(audioElement);
+      sourceNode.connect(ctx.destination);
+      var meterNode = webAudioPeakMeter.createMeterNode(sourceNode, ctx);
+      webAudioPeakMeter.createMeter(meterElement, meterNode, options);
+      audioElement.addEventListener('play', function () {
+        ctx.resume();
+      });
+    }
+    var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    initDemo('demo1-peak-meter', 'demo1-audio', { audioMeterStandard: 'true-peak', peakHoldDuration: 5000 }, audioCtx);
+  </script>
+</body>
+
+</html>

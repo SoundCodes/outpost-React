@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "14450515132",
+    "project_id": "soundcodes-outpost",
+    "storage_bucket": "soundcodes-outpost.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14450515132:android:31f51bbcd14a871346c4b9",
+        "android_client_info": {
+          "package_name": "com.soundcodes.outpost"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14450515132-80em14r1f0ct497r0mcpcage73ehsdfd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApFEj3AyN2wYLMAsTeZWBcClczm28JIXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14450515132-80em14r1f0ct497r0mcpcage73ehsdfd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "14450515132-bd4p1hkt429t7n7krkplff6souo5t1m6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.soundcodes.outpost"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

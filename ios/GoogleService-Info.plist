@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>14450515132-bd4p1hkt429t7n7krkplff6souo5t1m6.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.14450515132-bd4p1hkt429t7n7krkplff6souo5t1m6</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBaxOPaV4TUUNEOwc_lgSTkwE4xJPQmjTM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>14450515132</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.soundcodes.outpost</string>
+	<key>PROJECT_ID</key>
+	<string>soundcodes-outpost</string>
+	<key>STORAGE_BUCKET</key>
+	<string>soundcodes-outpost.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:14450515132:ios:3fe520af9b27569446c4b9</string>
+</dict>
+</plist>
